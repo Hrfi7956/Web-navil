@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Navila Rasyah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px;
+            width: 330px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            animation: muncul 1.2s ease;
+        }
+
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ball {
+            font-size: 32px;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1) rotate(3deg);
+        }
+
+        h2 {
+            margin: 12px 0 5px;
+        }
+
+        .tag {
+            font-size: 13px;
+            background: #00c6ff;
+            padding: 5px 12px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .info p {
+            margin: 8px 0;
+        }
+
+        .sosmed a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 18px;
+            background: #00c6ff;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sosmed a:hover {
+            background: #0072ff;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="ball">⚽</div>
+
+    <img src="navila.jpg" alt="Foto Profil">
+
+    <h2>Navila Rasyah</h2>
+    <div class="tag">Next Pro Football Player ⚽🔥</div>
+
+    <div class="info">
+        <p><b>Kelas:</b> XII TJKT 2</p>
+        <p><b>Hobi:</b> Sepakbola</p>
+        <p><b>Cita-cita:</b> Jadi Pemain Bola</p>
+    </div>
+
+    <div class="sosmed">
+        <a href="https://instagram.com/orangganteng_." target="_blank">
+            IG: @orangganteng_.
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
